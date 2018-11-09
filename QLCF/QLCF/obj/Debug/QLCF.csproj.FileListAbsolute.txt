@@ -1,0 +1,9 @@
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\bin\Debug\QLCF.exe.config
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\bin\Debug\QLCF.exe
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\bin\Debug\QLCF.pdb
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.csprojResolveAssemblyReference.cache
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.frmMain.resources
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.Properties.Resources.resources
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.csproj.GenerateResource.Cache
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.exe
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.pdb
