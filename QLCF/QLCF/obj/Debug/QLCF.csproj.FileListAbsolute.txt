@@ -7,3 +7,10 @@ E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.Properties.R
 E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.csproj.GenerateResource.Cache
 E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.exe
 E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.pdb
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\bin\Debug\BusinessLogicLayer.dll
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\bin\Debug\DataAccessLayer.dll
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\bin\Debug\BusinessLogicLayer.pdb
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\bin\Debug\DataAccessLayer.pdb
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.frmGoiMon.resources
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.ucLoaiMon.resources
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.ucMon.resources

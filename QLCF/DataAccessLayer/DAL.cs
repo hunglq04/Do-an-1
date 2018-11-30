@@ -25,19 +25,23 @@ namespace DataAccessLayer
             cnn.Open();
             cmd = cnn.CreateCommand();
         }
-        public DataSet ExecuteQueryDataSet( string strSQL, CommandType ct, params SqlParameter[] param)
+        public DataTable ExecuteQueryDataTable(
+             string strSQL, CommandType ct, params SqlParameter[] param)
         {
             cmd.CommandText = strSQL;
             cmd.CommandType = ct;
             adp = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
+            DataTable dt = new DataTable();
+            cmd.Parameters.Clear();
             if (param != null)
                 foreach (SqlParameter p in param)
                     cmd.Parameters.Add(p);
-            adp.Fill(ds);
-            return ds;
+            adp.Fill(dt);
+            return dt;
         }
-        public bool MyExecuteNonQuery(string strSQL, CommandType ct, ref string error, params SqlParameter[] param)
+        //Hàm chạy phương thức ExecuteNonQuery thực hiện lệnh insert, update, delete và trả về kiểu bool
+        public bool MyExecuteNonQuery(string strSQL, CommandType ct, ref string error,
+            params SqlParameter[] param)
         {
             bool f = false;
             if (cnn.State == ConnectionState.Open)
@@ -63,24 +67,20 @@ namespace DataAccessLayer
             }
             return f;
         }
-        public object MyExecuteScalar(string strSQL, CommandType ct, ref string error, params SqlParameter[] param)
+        //Hàm chạy phương thức ExecuteScalar và trả về 1 giá trị cụ thể
+        public object MyExecuteScalar(string strSQL, CommandType ct, params SqlParameter[] param)
         {
             object o = new object();
             if (cnn.State == ConnectionState.Open)
                 cnn.Close();
             cnn.Open();
+            cmd.CommandText = strSQL;
+            cmd.CommandType = ct;
+            cmd.Parameters.Clear();
             if (param != null)
                 foreach (SqlParameter p in param)
                     cmd.Parameters.Add(p);
-            try
-            {
-                cmd = new SqlCommand(strSQL, cnn);
-                o = cmd.ExecuteScalar();
-            }
-            catch (SqlException ex)
-            {
-                error = ex.Message;
-            }
+            o = cmd.ExecuteScalar();
             cnn.Close();
             return o;
         }
