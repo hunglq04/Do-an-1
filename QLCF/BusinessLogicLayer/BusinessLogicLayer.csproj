@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BanBLL.cs" />
+    <Compile Include="GoiMon.cs" />
     <Compile Include="LoaiMonBLL.cs" />
     <Compile Include="MonBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

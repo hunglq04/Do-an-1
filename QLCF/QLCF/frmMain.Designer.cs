@@ -34,24 +34,24 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btnSetting = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.pnlContainer = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.fpnlSanVuon = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.fpnlPhongLanh = new System.Windows.Forms.FlowLayoutPanel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.fpnlSanVuon = new System.Windows.Forms.FlowLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pnlSetting = new System.Windows.Forms.Panel();
             this.btnDoiMatKhau = new System.Windows.Forms.Button();
             this.btnDangXuat = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlContainer = new System.Windows.Forms.Panel();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnlContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pnlSetting.SuspendLayout();
+            this.pnlContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -119,29 +119,58 @@
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // pnlContainer
+            // panel2
             // 
-            this.pnlContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pnlContainer.Controls.Add(this.pnlSetting);
-            this.pnlContainer.Controls.Add(this.dataGridView1);
-            this.pnlContainer.Controls.Add(this.label1);
-            this.pnlContainer.Controls.Add(this.groupBox2);
-            this.pnlContainer.Controls.Add(this.groupBox1);
-            this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlContainer.ForeColor = System.Drawing.Color.White;
-            this.pnlContainer.Location = new System.Drawing.Point(230, 40);
-            this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(1034, 641);
-            this.pnlContainer.TabIndex = 2;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(115)))), ((int)(((byte)(158)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 40);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(230, 641);
+            this.panel2.TabIndex = 1;
             // 
-            // dataGridView1
+            // groupBox1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(654, 66);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(368, 431);
-            this.dataGridView1.TabIndex = 6;
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.fpnlPhongLanh);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(605, 266);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Khu Vực Phòng Lạnh";
+            // 
+            // fpnlPhongLanh
+            // 
+            this.fpnlPhongLanh.AutoScroll = true;
+            this.fpnlPhongLanh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fpnlPhongLanh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fpnlPhongLanh.Location = new System.Drawing.Point(3, 25);
+            this.fpnlPhongLanh.Name = "fpnlPhongLanh";
+            this.fpnlPhongLanh.Size = new System.Drawing.Size(599, 238);
+            this.fpnlPhongLanh.TabIndex = 0;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.fpnlSanVuon);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(0, 272);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(602, 369);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Khu Vực Sân Vườn";
+            // 
+            // fpnlSanVuon
+            // 
+            this.fpnlSanVuon.AutoScroll = true;
+            this.fpnlSanVuon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.fpnlSanVuon.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fpnlSanVuon.Location = new System.Drawing.Point(3, 25);
+            this.fpnlSanVuon.Name = "fpnlSanVuon";
+            this.fpnlSanVuon.Size = new System.Drawing.Size(596, 341);
+            this.fpnlSanVuon.TabIndex = 1;
             // 
             // label1
             // 
@@ -154,47 +183,14 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Danh Sách Các Món Đã Gọi";
             // 
-            // groupBox2
+            // dataGridView1
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.fpnlSanVuon);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(0, 272);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(643, 369);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Khu Vực Sân Vườn";
-            // 
-            // fpnlSanVuon
-            // 
-            this.fpnlSanVuon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.fpnlSanVuon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fpnlSanVuon.Location = new System.Drawing.Point(3, 25);
-            this.fpnlSanVuon.Name = "fpnlSanVuon";
-            this.fpnlSanVuon.Size = new System.Drawing.Size(637, 341);
-            this.fpnlSanVuon.TabIndex = 1;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.fpnlPhongLanh);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(643, 266);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Khu Vực Phòng Lạnh";
-            // 
-            // fpnlPhongLanh
-            // 
-            this.fpnlPhongLanh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.fpnlPhongLanh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fpnlPhongLanh.Location = new System.Drawing.Point(3, 25);
-            this.fpnlPhongLanh.Name = "fpnlPhongLanh";
-            this.fpnlPhongLanh.Size = new System.Drawing.Size(637, 238);
-            this.fpnlPhongLanh.TabIndex = 0;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(654, 66);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(368, 431);
+            this.dataGridView1.TabIndex = 6;
             // 
             // pnlSetting
             // 
@@ -232,14 +228,20 @@
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // pnlContainer
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(115)))), ((int)(((byte)(158)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 40);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(230, 641);
-            this.panel2.TabIndex = 1;
+            this.pnlContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnlContainer.Controls.Add(this.pnlSetting);
+            this.pnlContainer.Controls.Add(this.dataGridView1);
+            this.pnlContainer.Controls.Add(this.label1);
+            this.pnlContainer.Controls.Add(this.groupBox2);
+            this.pnlContainer.Controls.Add(this.groupBox1);
+            this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlContainer.ForeColor = System.Drawing.Color.White;
+            this.pnlContainer.Location = new System.Drawing.Point(230, 40);
+            this.pnlContainer.Name = "pnlContainer";
+            this.pnlContainer.Size = new System.Drawing.Size(1034, 641);
+            this.pnlContainer.TabIndex = 2;
             // 
             // frmMain
             // 
@@ -256,12 +258,12 @@
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.pnlSetting.ResumeLayout(false);
             this.pnlContainer.ResumeLayout(false);
             this.pnlContainer.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.pnlSetting.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -269,21 +271,21 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlHeader;
-        private System.Windows.Forms.Panel pnlContainer;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnSetting;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.FlowLayoutPanel fpnlPhongLanh;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.FlowLayoutPanel fpnlSanVuon;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel pnlSetting;
         private System.Windows.Forms.Button btnDangXuat;
         private System.Windows.Forms.Button btnDoiMatKhau;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.FlowLayoutPanel fpnlSanVuon;
-        private System.Windows.Forms.FlowLayoutPanel fpnlPhongLanh;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlContainer;
     }
 }
 

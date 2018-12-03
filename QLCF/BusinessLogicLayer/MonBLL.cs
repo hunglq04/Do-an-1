@@ -80,7 +80,7 @@ namespace BusinessLogicLayer
             this.MaMon = row["MaMon"].ToString();
             this.Ten = row["TenMon"].ToString();
             this.MaLoaiMon = row["MaLoaiMon"].ToString();
-            this.Gia = float.Parse(row["Gia"].ToString());
+            this.Gia = float.Parse(row["GiaTien"].ToString());
         }
     }
     public class MonBLL

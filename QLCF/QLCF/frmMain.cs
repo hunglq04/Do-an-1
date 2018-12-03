@@ -38,7 +38,7 @@ namespace QLCF
                 else
                 btn.BackColor = Color.Firebrick;
 
-                if (ban.MaKV.Equals("KV01"))
+                if (ban.MaKV.Trim() == "KV1")
                     fpnlPhongLanh.Controls.Add(btn);
                 else
                     fpnlSanVuon.Controls.Add(btn);

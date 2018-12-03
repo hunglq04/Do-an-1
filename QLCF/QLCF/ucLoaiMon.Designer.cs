@@ -51,7 +51,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 31);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(431, 10);
+            this.panel1.Size = new System.Drawing.Size(429, 10);
             this.panel1.TabIndex = 1;
             // 
             // fpnlMon
@@ -59,18 +59,19 @@
             this.fpnlMon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fpnlMon.Location = new System.Drawing.Point(0, 41);
             this.fpnlMon.Name = "fpnlMon";
-            this.fpnlMon.Size = new System.Drawing.Size(431, 201);
+            this.fpnlMon.Size = new System.Drawing.Size(429, 423);
             this.fpnlMon.TabIndex = 2;
             // 
             // ucLoaiMon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.fpnlMon);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "ucLoaiMon";
-            this.Size = new System.Drawing.Size(431, 242);
+            this.Size = new System.Drawing.Size(429, 464);
             this.Load += new System.EventHandler(this.ucLoaiMon_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

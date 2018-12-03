@@ -15,7 +15,7 @@ namespace QLCF
     {
         LoaiMonBLL dbLoaiMon;
         MonBLL dbMon;
-        bool search = true;
+        List<GoiMon> dsGoiMon;
         public frmGoiMon()
         {
             InitializeComponent();
@@ -36,6 +36,7 @@ namespace QLCF
                 ucLoaiMon ucLoaiMon1 = new ucLoaiMon();
                 ucLoaiMon1.tenLM = lm.Ten;
                 flowLayoutPanel1.Controls.Add(ucLoaiMon1);
+                //ucLoaiMon1.LoadMon();
             }
         }
 
@@ -65,6 +66,20 @@ namespace QLCF
             btnSearch.Visible = false;
             btnDone.Visible = true;
             textBox1.Enabled = true;
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.DataSource != null)
+                dataGridView1.DataSource = null;
+            dataGridView1.DataSource = ucMon.dsGoiMon;
+        }
+
+        private void btnKetThuc_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            dataGridView1.DataSource = null;
+            LoadData();
         }
     }
 }

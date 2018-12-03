@@ -20,7 +20,7 @@ namespace QLCF
             InitializeComponent();
             dbMon = new MonBLL();
         }
-        void LoadMon()
+        public void LoadMon()
         {
             List<Mon> dsMon = dbMon.LayDanhSachMon(tenLM);
             foreach(Mon mon in dsMon)
