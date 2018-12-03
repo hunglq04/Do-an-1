@@ -44,8 +44,11 @@ namespace QLCF
             {
                 textBox1.Enabled = false;
                 textBox1.Text = "0";
-                var mon = dsGoiMon.Single(m => m.TenMon == checkBox1.Text);
-                dsGoiMon.Remove(mon);
+                if (dsGoiMon.Exists(m => m.TenMon.Equals(checkBox1.Text)))
+                {
+                    var mon = dsGoiMon.Single(m => m.TenMon == checkBox1.Text);
+                    dsGoiMon.Remove(mon);
+                }
             }
         }
 
@@ -56,6 +59,15 @@ namespace QLCF
                 dsGoiMon.Add(data);
             else
                 dsGoiMon.Remove(data);
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (dsGoiMon.Exists(m => m.TenMon.Equals(checkBox1.Text)))
+            {
+                var mon = dsGoiMon.Single(m => m.TenMon == checkBox1.Text);
+                dsGoiMon.Remove(mon);
+            }
         }
     }
 }

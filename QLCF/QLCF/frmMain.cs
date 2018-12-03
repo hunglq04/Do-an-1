@@ -33,6 +33,9 @@ namespace QLCF
                 btn.ForeColor = Color.Black;
                 btn.FlatStyle = FlatStyle.Flat;
                 btn.FlatAppearance.BorderSize = 1;
+                btn.Click += btn_Click;
+                btn.Tag = ban;
+
                 if (ban.TinhTrang.Equals("Trống"))
                     btn.BackColor = Color.Transparent;
                 else
@@ -46,6 +49,10 @@ namespace QLCF
         }
         #endregion
         #region Events
+        private void btn_Click(object sender, EventArgs e)
+        {
+            lbMaBan.Text = (sender as Button).Text;
+        }
         private void btnClose_Click(object sender, EventArgs e)
         {
             DialogResult traLoi = MessageBox.Show("Bạn có thật sự muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button2);
@@ -60,10 +67,15 @@ namespace QLCF
                 pnlSetting.Visible = false;
             else pnlSetting.Visible = true;
         }
-
         private void pnlSetting_Leave(object sender, EventArgs e)
         {
             pnlSetting.Visible = false;
+        }
+        private void btnGoiMon_Click(object sender, EventArgs e)
+        {
+            frmGoiMon fGoiMon = new frmGoiMon();
+            fGoiMon.ShowDialog();
+            dgvGoiMon.DataSource = ucMon.dsGoiMon;
         }
         #endregion
     }

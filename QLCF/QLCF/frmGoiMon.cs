@@ -70,16 +70,14 @@ namespace QLCF
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.DataSource != null)
-                dataGridView1.DataSource = null;
-            dataGridView1.DataSource = ucMon.dsGoiMon;
+            this.Close();
         }
 
         private void btnKetThuc_Click(object sender, EventArgs e)
         {
-            flowLayoutPanel1.Controls.Clear();
-            dataGridView1.DataSource = null;
-            LoadData();
+            //flowLayoutPanel1.Controls.Clear();
+            //dataGridView1.DataSource = null;
+            //LoadData();
         }
     }
 }
