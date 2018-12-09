@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,6 +40,11 @@ namespace BusinessLogicLayer
         {
             this.TenMon = tenMon;
             this.SoLuong = soLuong;
+        }
+        public GoiMon(DataRow row)
+        {
+            TenMon = row["TenMon"].ToString();
+            SoLuong = int.Parse(row["SoLuong"].ToString());
         }
     }
 }

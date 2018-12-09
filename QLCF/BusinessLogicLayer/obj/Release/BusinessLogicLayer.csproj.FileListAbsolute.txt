@@ -1,0 +1,7 @@
+E:\University\3rd year\1st Project\Do-an-1\QLCF\BusinessLogicLayer\bin\Release\BusinessLogicLayer.dll
+E:\University\3rd year\1st Project\Do-an-1\QLCF\BusinessLogicLayer\bin\Release\BusinessLogicLayer.pdb
+E:\University\3rd year\1st Project\Do-an-1\QLCF\BusinessLogicLayer\bin\Release\DataAccessLayer.dll
+E:\University\3rd year\1st Project\Do-an-1\QLCF\BusinessLogicLayer\bin\Release\DataAccessLayer.pdb
+E:\University\3rd year\1st Project\Do-an-1\QLCF\BusinessLogicLayer\obj\Release\BusinessLogicLayer.csprojResolveAssemblyReference.cache
+E:\University\3rd year\1st Project\Do-an-1\QLCF\BusinessLogicLayer\obj\Release\BusinessLogicLayer.dll
+E:\University\3rd year\1st Project\Do-an-1\QLCF\BusinessLogicLayer\obj\Release\BusinessLogicLayer.pdb

@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,11 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmChinhSua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChinhSua.Designer.cs">
+      <DependentUpon>frmChinhSua.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGoiMon.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmGoiMon.Designer.cs">
       <DependentUpon>frmGoiMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHoaDon.Designer.cs">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -72,8 +85,20 @@
     <Compile Include="ucMon.Designer.cs">
       <DependentUpon>ucMon.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucThongKe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucThongKe.Designer.cs">
+      <DependentUpon>ucThongKe.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmChinhSua.resx">
+      <DependentUpon>frmChinhSua.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGoiMon.resx">
       <DependentUpon>frmGoiMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHoaDon.resx">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
@@ -92,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucMon.resx">
       <DependentUpon>ucMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucThongKe.resx">
+      <DependentUpon>ucThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

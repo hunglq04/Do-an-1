@@ -15,7 +15,7 @@ namespace DataAccessLayer
         SqlDataAdapter adp;
 
         string strConnect =
-            "Data Source=(local); Initial Catalog=QLCF; Integrated Security=True";
+            "Data Source=192.168.1.26; Initial Catalog=QLCF; User ID=admin; Password=123" ;
 
         public DAL()
         {

@@ -15,69 +15,45 @@ namespace QLCF
     {
         LoaiMonBLL dbLoaiMon;
         MonBLL dbMon;
-        List<GoiMon> dsGoiMon;
+        HoaDonBLL dbHoaDon;
         public frmGoiMon()
         {
             InitializeComponent();
             dbLoaiMon = new LoaiMonBLL();
             dbMon = new MonBLL();
+            dbHoaDon = new HoaDonBLL();
         }
-
         private void frmGoiMon_Load(object sender, EventArgs e)
         {
             LoadData();
         }
         void LoadData()
         {
-            textBox1.Enabled = false;
             List<LoaiMon> dsLoaiMon = dbLoaiMon.LayDSLoaiMon();
             foreach(LoaiMon lm in dsLoaiMon)
             {
                 ucLoaiMon ucLoaiMon1 = new ucLoaiMon();
                 ucLoaiMon1.tenLM = lm.Ten;
                 flowLayoutPanel1.Controls.Add(ucLoaiMon1);
-                //ucLoaiMon1.LoadMon();
             }
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            flowLayoutPanel1.Controls.Clear();
-            List<Mon> dsMon = dbMon.TimKiemMon(textBox1.Text);
-            foreach (Mon mon in dsMon)
-            {
-                ucMon ucMon1 = new ucMon();
-                ucMon1.tenMA = mon.Ten;
-                flowLayoutPanel1.Controls.Add(ucMon1);
-            }
-        }
-
-        private void btnDone_Click(object sender, EventArgs e)
-        {
-            btnDone.Visible = false;
-            btnSearch.Visible = true;
-            textBox1.ResetText();
-            flowLayoutPanel1.Controls.Clear();
-            LoadData();
-        }
-
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            btnSearch.Visible = false;
-            btnDone.Visible = true;
-            textBox1.Enabled = true;
-        }
-
         private void btnThem_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
+            string err = "";
+            foreach(GoiMon mon in ucMon.dsGoiMon)
+            {
+                if (dbHoaDon.GoiMon(frmMain.maHD, mon.TenMon, mon.SoLuong.ToString(), ref err))
+                {
 
-        private void btnKetThuc_Click(object sender, EventArgs e)
-        {
-            //flowLayoutPanel1.Controls.Clear();
-            //dataGridView1.DataSource = null;
-            //LoadData();
+                }
+                else
+                {
+                    MessageBox.Show(err, "Đã có lỗi xãy ra!");
+                    return;
+                }
+            }
+            ucMon.dsGoiMon.Clear();
+            this.Close();
         }
     }
 }

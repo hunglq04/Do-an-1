@@ -1,0 +1,5 @@
+E:\University\3rd year\1st Project\Do-an-1\QLCF\DataAccessLayer\bin\Release\DataAccessLayer.dll
+E:\University\3rd year\1st Project\Do-an-1\QLCF\DataAccessLayer\bin\Release\DataAccessLayer.pdb
+E:\University\3rd year\1st Project\Do-an-1\QLCF\DataAccessLayer\obj\Release\DataAccessLayer.csprojResolveAssemblyReference.cache
+E:\University\3rd year\1st Project\Do-an-1\QLCF\DataAccessLayer\obj\Release\DataAccessLayer.dll
+E:\University\3rd year\1st Project\Do-an-1\QLCF\DataAccessLayer\obj\Release\DataAccessLayer.pdb

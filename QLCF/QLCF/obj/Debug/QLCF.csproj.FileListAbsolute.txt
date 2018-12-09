@@ -14,3 +14,6 @@ E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\bin\Debug\DataAccessLayer.p
 E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.frmGoiMon.resources
 E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.ucLoaiMon.resources
 E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.ucMon.resources
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.frmHoaDon.resources
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.frmChinhSua.resources
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.ucThongKe.resources
