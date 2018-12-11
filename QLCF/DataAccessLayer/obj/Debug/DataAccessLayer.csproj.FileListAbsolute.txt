@@ -3,3 +3,8 @@ E:\University\3rd year\1st Project\Do-an-1\QLCF\DataAccessLayer\bin\Debug\DataAc
 E:\University\3rd year\1st Project\Do-an-1\QLCF\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
 E:\University\3rd year\1st Project\Do-an-1\QLCF\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 E:\University\3rd year\1st Project\Do-an-1\QLCF\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+E:\University\3rd year\Project 1\Do-an-1\QLCF\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+E:\University\3rd year\Project 1\Do-an-1\QLCF\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+E:\University\3rd year\Project 1\Do-an-1\QLCF\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+E:\University\3rd year\Project 1\Do-an-1\QLCF\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+E:\University\3rd year\Project 1\Do-an-1\QLCF\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache

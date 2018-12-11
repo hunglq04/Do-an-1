@@ -46,7 +46,9 @@
     <Compile Include="HoaDonBLL.cs" />
     <Compile Include="LoaiMonBLL.cs" />
     <Compile Include="MonBLL.cs" />
+    <Compile Include="NhanVienBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsersBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">

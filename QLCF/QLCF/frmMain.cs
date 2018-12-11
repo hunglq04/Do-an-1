@@ -21,11 +21,14 @@ namespace QLCF
         public static string maNVTN;
         public static List<GoiMon> dsGoiMon;
         ucThongKe ucThongKe1;
+        ucCacMon ucCacMon1;
+        ucNhanVien ucNhanVien1;
         public frmMain()
         {
             InitializeComponent();
             dbBan = new BanBLL();
             dbHoaDon = new HoaDonBLL();
+            lbMaNVTN.Text = DataAccessLayer.DAL.user;
             maNVTN = lbMaNVTN.Text;
             btnNV.Visible = false;
             btnMon.Visible = false;
@@ -74,14 +77,19 @@ namespace QLCF
             DialogResult traLoi = MessageBox.Show("Bạn có thật sự muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button2);
             if(traLoi == DialogResult.Yes)
             {
-                this.Close();
+                Application.Exit();
             }
         }
         private void btnSetting_Click(object sender, EventArgs e)
         {
             if (pnlSetting.Visible)
                 pnlSetting.Visible = false;
-            else pnlSetting.Visible = true;
+            else
+            {
+                pnlSetting.Visible = true;
+                pnlSetting.BringToFront();
+            }
+
         }
         private void pnlSetting_Leave(object sender, EventArgs e)
         {
@@ -207,28 +215,53 @@ namespace QLCF
         {
             btnNV.Visible = false;
             btnMon.Visible = false;
-            ucThongKe1.Visible = false;
-
+            if(ucThongKe1 != null)
+                ucThongKe1.Visible = false;
+            if(ucCacMon1 != null)
+                ucCacMon1.Visible = false;
+            if (ucNhanVien1 != null)
+                ucNhanVien1.Visible = false;
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
+            if (ucCacMon1 != null)
+                ucCacMon1.Visible = false;
             btnNV.Visible = false;
             btnMon.Visible = false;
             ucThongKe1 = new ucThongKe();
-            //pnlContainer.Controls.Clear();
             pnlContainer.Controls.Add(ucThongKe1);
             ucThongKe1.BringToFront();
         }
 
         private void btnNV_Click(object sender, EventArgs e)
         {
-            
+            ucNhanVien1 = new ucNhanVien();
+            pnlContainer.Controls.Add(ucNhanVien1);
+            ucNhanVien1.BringToFront();
         }
 
         private void btnMon_Click(object sender, EventArgs e)
         {
-            
+            ucCacMon1 = new ucCacMon();
+            if (ucThongKe1 != null)
+                ucThongKe1.Visible = false;
+            pnlContainer.Controls.Add(ucCacMon1);
+            ucCacMon1.BringToFront();
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            //frmDangNhap fDN = new frmDangNhap();
+            //fDN.Show();
+        }
+
+        private void btnDoiMatKhau_Click(object sender, EventArgs e)
+        {
+            pnlSetting.SendToBack();
+            frmDoiMatKhau fDoiMK = new frmDoiMatKhau();
+            fDoiMK.ShowDialog();
         }
     }
 }

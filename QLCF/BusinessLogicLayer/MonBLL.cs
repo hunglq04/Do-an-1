@@ -112,5 +112,18 @@ namespace BusinessLogicLayer
             }
             return dsMon;
         }
+
+        public bool InsertMon(string maMon, string ten, string maLoaiMon, float gia, ref string error)
+        {
+            return db.MyExecuteNonQuery("USP_ThemMon", CommandType.StoredProcedure, ref error, new SqlParameter("@mamon", maMon), new SqlParameter("@tenmon", ten), new SqlParameter("@maloaimon", maLoaiMon), new SqlParameter("@giatien", gia));
+        }
+        public bool UpdateMon(string maMon, string ten, float gia, ref string error)
+        {
+            return db.MyExecuteNonQuery("USP_UpdateMon", CommandType.StoredProcedure, ref error, new SqlParameter("@mamon", maMon), new SqlParameter("@tenmon", ten), new SqlParameter("@giatien", gia));
+        }
+        public bool DeleteMon(string maMon, ref string error)
+        {
+            return db.MyExecuteNonQuery("USP_DeleteMon", CommandType.StoredProcedure, ref error, new SqlParameter("@mamon", maMon));
+        }
     }
 }

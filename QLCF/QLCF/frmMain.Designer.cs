@@ -36,6 +36,12 @@
             this.btnSetting = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.btnDanhMuc = new System.Windows.Forms.Button();
+            this.btnNV = new System.Windows.Forms.Button();
+            this.btnMon = new System.Windows.Forms.Button();
+            this.btnThongKe = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.fpnlPhongLanh = new System.Windows.Forms.FlowLayoutPanel();
@@ -54,19 +60,14 @@
             this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnChinhSua = new System.Windows.Forms.Button();
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.btnGoiMon = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnChinhSua = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.btnDanhMuc = new System.Windows.Forms.Button();
-            this.btnNV = new System.Windows.Forms.Button();
-            this.btnMon = new System.Windows.Forms.Button();
-            this.btnThongKe = new System.Windows.Forms.Button();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -75,7 +76,6 @@
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGoiMon)).BeginInit();
             this.panel1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -153,6 +153,100 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(230, 571);
             this.panel2.TabIndex = 1;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.btnHome);
+            this.flowLayoutPanel1.Controls.Add(this.btnDanhMuc);
+            this.flowLayoutPanel1.Controls.Add(this.btnNV);
+            this.flowLayoutPanel1.Controls.Add(this.btnMon);
+            this.flowLayoutPanel1.Controls.Add(this.btnThongKe);
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 219);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 349);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // btnHome
+            // 
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
+            this.btnHome.Location = new System.Drawing.Point(-3, 3);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(200, 50);
+            this.btnHome.TabIndex = 12;
+            this.btnHome.Text = "     Trang chính";
+            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // btnDanhMuc
+            // 
+            this.btnDanhMuc.FlatAppearance.BorderSize = 0;
+            this.btnDanhMuc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDanhMuc.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDanhMuc.ForeColor = System.Drawing.Color.White;
+            this.btnDanhMuc.Image = ((System.Drawing.Image)(resources.GetObject("btnDanhMuc.Image")));
+            this.btnDanhMuc.Location = new System.Drawing.Point(-3, 59);
+            this.btnDanhMuc.Name = "btnDanhMuc";
+            this.btnDanhMuc.Size = new System.Drawing.Size(200, 50);
+            this.btnDanhMuc.TabIndex = 15;
+            this.btnDanhMuc.Text = "     Danh mục    ";
+            this.btnDanhMuc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDanhMuc.UseVisualStyleBackColor = true;
+            this.btnDanhMuc.Click += new System.EventHandler(this.btnDanhMuc_Click);
+            // 
+            // btnNV
+            // 
+            this.btnNV.FlatAppearance.BorderSize = 0;
+            this.btnNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNV.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNV.ForeColor = System.Drawing.Color.White;
+            this.btnNV.Image = ((System.Drawing.Image)(resources.GetObject("btnNV.Image")));
+            this.btnNV.Location = new System.Drawing.Point(49, 115);
+            this.btnNV.Name = "btnNV";
+            this.btnNV.Size = new System.Drawing.Size(148, 50);
+            this.btnNV.TabIndex = 16;
+            this.btnNV.Text = "     Nhân Viên";
+            this.btnNV.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNV.UseVisualStyleBackColor = true;
+            this.btnNV.Click += new System.EventHandler(this.btnNV_Click);
+            // 
+            // btnMon
+            // 
+            this.btnMon.FlatAppearance.BorderSize = 0;
+            this.btnMon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMon.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMon.ForeColor = System.Drawing.Color.White;
+            this.btnMon.Image = ((System.Drawing.Image)(resources.GetObject("btnMon.Image")));
+            this.btnMon.Location = new System.Drawing.Point(49, 171);
+            this.btnMon.Name = "btnMon";
+            this.btnMon.Size = new System.Drawing.Size(148, 50);
+            this.btnMon.TabIndex = 17;
+            this.btnMon.Text = "     Đồ uống     ";
+            this.btnMon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMon.UseVisualStyleBackColor = true;
+            this.btnMon.Click += new System.EventHandler(this.btnMon_Click);
+            // 
+            // btnThongKe
+            // 
+            this.btnThongKe.FlatAppearance.BorderSize = 0;
+            this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongKe.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongKe.ForeColor = System.Drawing.Color.White;
+            this.btnThongKe.Image = ((System.Drawing.Image)(resources.GetObject("btnThongKe.Image")));
+            this.btnThongKe.Location = new System.Drawing.Point(-3, 227);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(200, 50);
+            this.btnThongKe.TabIndex = 18;
+            this.btnThongKe.Text = "     Thống Kê    ";
+            this.btnThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnThongKe.UseVisualStyleBackColor = true;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // pictureBox2
             // 
@@ -232,6 +326,7 @@
             this.btnDangXuat.TabIndex = 1;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.UseVisualStyleBackColor = true;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // btnDoiMatKhau
             // 
@@ -245,6 +340,7 @@
             this.btnDoiMatKhau.TabIndex = 0;
             this.btnDoiMatKhau.Text = "Đổi mật khẩu";
             this.btnDoiMatKhau.UseVisualStyleBackColor = true;
+            this.btnDoiMatKhau.Click += new System.EventHandler(this.btnDoiMatKhau_Click);
             // 
             // pnlContainer
             // 
@@ -356,6 +452,16 @@
             this.panel1.Size = new System.Drawing.Size(432, 62);
             this.panel1.TabIndex = 5;
             // 
+            // btnChinhSua
+            // 
+            this.btnChinhSua.Location = new System.Drawing.Point(0, 20);
+            this.btnChinhSua.Name = "btnChinhSua";
+            this.btnChinhSua.Size = new System.Drawing.Size(136, 42);
+            this.btnChinhSua.TabIndex = 2;
+            this.btnChinhSua.Text = "Chỉnh Sửa";
+            this.btnChinhSua.UseVisualStyleBackColor = true;
+            this.btnChinhSua.Click += new System.EventHandler(this.btnChinhSua_Click);
+            // 
             // btnThanhToan
             // 
             this.btnThanhToan.Location = new System.Drawing.Point(298, 20);
@@ -382,110 +488,6 @@
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // btnChinhSua
-            // 
-            this.btnChinhSua.Location = new System.Drawing.Point(0, 20);
-            this.btnChinhSua.Name = "btnChinhSua";
-            this.btnChinhSua.Size = new System.Drawing.Size(136, 42);
-            this.btnChinhSua.TabIndex = 2;
-            this.btnChinhSua.Text = "Chỉnh Sửa";
-            this.btnChinhSua.UseVisualStyleBackColor = true;
-            this.btnChinhSua.Click += new System.EventHandler(this.btnChinhSua_Click);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.btnHome);
-            this.flowLayoutPanel1.Controls.Add(this.btnDanhMuc);
-            this.flowLayoutPanel1.Controls.Add(this.btnNV);
-            this.flowLayoutPanel1.Controls.Add(this.btnMon);
-            this.flowLayoutPanel1.Controls.Add(this.btnThongKe);
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 219);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 349);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // btnHome
-            // 
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
-            this.btnHome.Location = new System.Drawing.Point(-3, 3);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(200, 50);
-            this.btnHome.TabIndex = 12;
-            this.btnHome.Text = "     Trang chính";
-            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHome.UseVisualStyleBackColor = true;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // btnDanhMuc
-            // 
-            this.btnDanhMuc.FlatAppearance.BorderSize = 0;
-            this.btnDanhMuc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDanhMuc.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDanhMuc.ForeColor = System.Drawing.Color.White;
-            this.btnDanhMuc.Image = ((System.Drawing.Image)(resources.GetObject("btnDanhMuc.Image")));
-            this.btnDanhMuc.Location = new System.Drawing.Point(-3, 59);
-            this.btnDanhMuc.Name = "btnDanhMuc";
-            this.btnDanhMuc.Size = new System.Drawing.Size(200, 50);
-            this.btnDanhMuc.TabIndex = 15;
-            this.btnDanhMuc.Text = "     Danh mục    ";
-            this.btnDanhMuc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDanhMuc.UseVisualStyleBackColor = true;
-            this.btnDanhMuc.Click += new System.EventHandler(this.btnDanhMuc_Click);
-            // 
-            // btnNV
-            // 
-            this.btnNV.FlatAppearance.BorderSize = 0;
-            this.btnNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNV.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNV.ForeColor = System.Drawing.Color.White;
-            this.btnNV.Image = ((System.Drawing.Image)(resources.GetObject("btnNV.Image")));
-            this.btnNV.Location = new System.Drawing.Point(49, 115);
-            this.btnNV.Name = "btnNV";
-            this.btnNV.Size = new System.Drawing.Size(148, 50);
-            this.btnNV.TabIndex = 16;
-            this.btnNV.Text = "     Nhân Viên";
-            this.btnNV.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNV.UseVisualStyleBackColor = true;
-            this.btnNV.Click += new System.EventHandler(this.btnNV_Click);
-            // 
-            // btnMon
-            // 
-            this.btnMon.FlatAppearance.BorderSize = 0;
-            this.btnMon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMon.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMon.ForeColor = System.Drawing.Color.White;
-            this.btnMon.Image = ((System.Drawing.Image)(resources.GetObject("btnMon.Image")));
-            this.btnMon.Location = new System.Drawing.Point(49, 171);
-            this.btnMon.Name = "btnMon";
-            this.btnMon.Size = new System.Drawing.Size(148, 50);
-            this.btnMon.TabIndex = 17;
-            this.btnMon.Text = "     Đồ uống     ";
-            this.btnMon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMon.UseVisualStyleBackColor = true;
-            this.btnMon.Click += new System.EventHandler(this.btnMon_Click);
-            // 
-            // btnThongKe
-            // 
-            this.btnThongKe.FlatAppearance.BorderSize = 0;
-            this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongKe.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongKe.ForeColor = System.Drawing.Color.White;
-            this.btnThongKe.Image = ((System.Drawing.Image)(resources.GetObject("btnThongKe.Image")));
-            this.btnThongKe.Location = new System.Drawing.Point(-3, 227);
-            this.btnThongKe.Name = "btnThongKe";
-            this.btnThongKe.Size = new System.Drawing.Size(200, 50);
-            this.btnThongKe.TabIndex = 18;
-            this.btnThongKe.Text = "     Thống Kê    ";
-            this.btnThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnThongKe.UseVisualStyleBackColor = true;
-            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -502,6 +504,7 @@
             this.pnlHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -511,7 +514,6 @@
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGoiMon)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

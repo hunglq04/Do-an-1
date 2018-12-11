@@ -14,8 +14,10 @@ namespace DataAccessLayer
         SqlCommand cmd;
         SqlDataAdapter adp;
 
+        public static string user;
+        public static string pass;
         string strConnect =
-            "Data Source=192.168.1.26; Initial Catalog=QLCF; User ID=admin; Password=123" ;
+            "Data Source=192.168.254.10; Initial Catalog=QLCF; User ID="+user+"; Password="+pass;
 
         public DAL()
         {

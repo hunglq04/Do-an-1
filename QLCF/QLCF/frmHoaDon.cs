@@ -48,7 +48,7 @@ namespace QLCF
             }
             else
             {
-                MessageBox.Show("Đã có lỗi xãy ra!", err);
+                MessageBox.Show(err, "Đã có lỗi xãy ra!");
             }
         }
     }
