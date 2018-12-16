@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -26,18 +27,28 @@ namespace QLCF
             DataAccessLayer.DAL.user = txtUserName.Text;
             try
             {
-                this.Hide();
-                db = new DataAccessLayer.DAL();
-                frmMain f = new frmMain();
-                f.ShowDialog();
-                this.Show();
+                db = new DataAccessLayer.DAL();   
             }
-            catch
+            catch(SqlException)
             {
                 lblError.Visible = true;
                 txtUserName.Focus();
+                return;
             }
-            
+            try
+            {
+                frmMain f = new frmMain();
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
+            }
+            catch(NullReferenceException)
+            {
+                lblError.Visible = true;
+                txtUserName.Focus();
+                return;
+            }
+
         }
 
         private void txtUserName_TextChanged(object sender, EventArgs e)
@@ -54,15 +65,26 @@ namespace QLCF
                 try
                 {
                     db = new DataAccessLayer.DAL();
+
+                }
+                catch (SqlException)
+                {
+                    lblError.Visible = true;
+                    txtUserName.Focus();
+                    return;
+                }
+                try
+                {
                     frmMain f = new frmMain();
                     this.Hide();
                     f.ShowDialog();
                     this.Show();
                 }
-                catch
+                catch (NullReferenceException)
                 {
                     lblError.Visible = true;
                     txtUserName.Focus();
+                    return;
                 }
             }
         }

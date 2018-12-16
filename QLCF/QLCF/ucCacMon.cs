@@ -69,6 +69,7 @@ namespace QLCF
             this.btnThem.Enabled = false;
             this.btnSua.Enabled = false;
             this.btnXoa.Enabled = false;
+            txtMaMon.Enabled = true;
             this.txtMaMon.Focus();
         }
 
@@ -87,6 +88,7 @@ namespace QLCF
                 {
                     MessageBox.Show("Xóa thành công!", "Thông báo");
                     LoadMon();
+                    dgvMon.DataSource = monbll.LayDanhSachMon(txtTenLM.Text);
                 }
                 else MessageBox.Show(error, "Thông báo");
             }
@@ -134,6 +136,7 @@ namespace QLCF
                 {
                     MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LoadMon();
+                    dgvMon.DataSource = monbll.LayDanhSachMon(txtTenLM.Text);
                 }
                 else MessageBox.Show(error, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -146,6 +149,7 @@ namespace QLCF
                 {
                     MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LoadMon();
+                    dgvMon.DataSource = monbll.LayDanhSachMon(txtTenLM.Text);
                 }
                 else MessageBox.Show(error, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

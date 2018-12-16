@@ -69,6 +69,7 @@ namespace QLCF
             this.btnThem.Enabled = false;
             this.btnSua.Enabled = false;
             this.btnXoa.Enabled = false;
+            txtMaNV.Enabled = true;
             this.txtMaNV.Focus();
         }
 

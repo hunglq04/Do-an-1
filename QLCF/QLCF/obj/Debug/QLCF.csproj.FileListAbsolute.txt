@@ -41,3 +41,6 @@ E:\University\3rd year\Project 1\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.csproj.Generat
 E:\University\3rd year\Project 1\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.frmDangNhap.resources
 E:\University\3rd year\Project 1\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.frmDoiMatKhau.resources
 E:\University\3rd year\Project 1\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.ucNhanVien.resources
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.frmDangNhap.resources
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.frmDoiMatKhau.resources
+E:\University\3rd year\1st Project\Do-an-1\QLCF\QLCF\obj\Debug\QLCF.ucNhanVien.resources

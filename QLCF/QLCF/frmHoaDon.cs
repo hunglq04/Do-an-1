@@ -20,6 +20,7 @@ namespace QLCF
             InitializeComponent();
             dbHoaDon = new HoaDonBLL();
             thanhToan = false;
+            EditDataGridView(dgvChiTietHD);
         }
 
         private void frmHoaDon_Load(object sender, EventArgs e)
@@ -50,6 +51,23 @@ namespace QLCF
             {
                 MessageBox.Show(err, "Đã có lỗi xãy ra!");
             }
+        }
+        void EditDataGridView(DataGridView dgv)
+        {
+            dgv.BorderStyle = BorderStyle.None;
+            dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.LightCyan; //Color.FromArgb(238, 239, 249)
+            dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgv.DefaultCellStyle.SelectionBackColor = Color.FromArgb(185, 233, 255);
+            dgv.DefaultCellStyle.SelectionForeColor = Color.Black;
+            dgv.BackgroundColor = Color.White;
+
+            dgv.EnableHeadersVisualStyles = false;
+            dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+
+            dgv.DefaultCellStyle.Font = new Font("Microsoft Sans Serif", 14F, GraphicsUnit.Pixel);
+            dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Microsoft Sans Serif", 15.5F, GraphicsUnit.Pixel);
         }
     }
 }
