@@ -40,7 +40,14 @@ namespace QLCF
                 frmMain f = new frmMain();
                 this.Hide();
                 f.ShowDialog();
-                this.Show();
+                try
+                {
+                    this.Show();
+                }
+                catch (ObjectDisposedException)
+                {
+                    this.Close();
+                }
             }
             catch(NullReferenceException)
             {
@@ -78,7 +85,14 @@ namespace QLCF
                     frmMain f = new frmMain();
                     this.Hide();
                     f.ShowDialog();
-                    this.Show();
+                    try
+                    {
+                        this.Show();
+                    }
+                    catch (ObjectDisposedException)
+                    {
+                        this.Close();
+                    }
                 }
                 catch (NullReferenceException)
                 {

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLogicLayer;
+using System.Data.SqlClient;
 
 namespace QLCF
 {
@@ -225,29 +226,51 @@ namespace QLCF
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-            if (ucCacMon1 != null)
-                ucCacMon1.Visible = false;
-            btnNV.Visible = false;
-            btnMon.Visible = false;
-            ucThongKe1 = new ucThongKe();
-            pnlContainer.Controls.Add(ucThongKe1);
-            ucThongKe1.BringToFront();
+            try
+            {
+                if (ucCacMon1 != null)
+                    ucCacMon1.Visible = false;
+                btnNV.Visible = false;
+                btnMon.Visible = false;
+                ucThongKe1 = new ucThongKe();
+                pnlContainer.Controls.Add(ucThongKe1);
+                ucThongKe1.BringToFront();
+            }
+            catch(SqlException)
+            {
+                MessageBox.Show("Bạn không có quyền truy cập!");
+            }
         }
 
         private void btnNV_Click(object sender, EventArgs e)
         {
-            ucNhanVien1 = new ucNhanVien();
-            pnlContainer.Controls.Add(ucNhanVien1);
-            ucNhanVien1.BringToFront();
+            try
+            {
+                ucNhanVien1 = new ucNhanVien();
+                pnlContainer.Controls.Add(ucNhanVien1);
+                ucNhanVien1.BringToFront();
+            }
+            catch(SqlException)
+            {
+                MessageBox.Show("Bạn không có quyền truy cập!");
+            }
         }
 
         private void btnMon_Click(object sender, EventArgs e)
         {
-            ucCacMon1 = new ucCacMon();
-            if (ucThongKe1 != null)
-                ucThongKe1.Visible = false;
-            pnlContainer.Controls.Add(ucCacMon1);
-            ucCacMon1.BringToFront();
+            try
+            {
+                ucCacMon1 = new ucCacMon();
+                ucMon mon = new ucMon();
+                if (ucThongKe1 != null)
+                    ucThongKe1.Visible = false;
+                pnlContainer.Controls.Add(ucCacMon1);
+                ucCacMon1.BringToFront();
+            }
+            catch(SqlException)
+            {
+                MessageBox.Show("Bạn không có quyền truy cập!");
+            }
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
